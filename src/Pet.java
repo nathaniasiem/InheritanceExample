@@ -29,7 +29,7 @@ public abstract class Pet {
 
     @Override
     public String toString() {
-        String output = "-----------";
+        String output = "-----------"+"\n";
         output += "Name: " + this.name + "\n";
         output += "Age: " + this.age + "\n";
         output += "Breed: " + this.breed + "\n";
@@ -37,7 +37,5 @@ public abstract class Pet {
         return output;
 
     }
-    public abstract void speak(){
-        
-    }
+    public abstract void speak();
 }
