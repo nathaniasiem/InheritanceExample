@@ -10,10 +10,14 @@
 public class Dog extends Pet{
     //always call this method first; even if there is no constructor
     //constructor 
-     public Dog(String name, int age, String breed, String colour){
+    /**@param name
+     * @param age
+     * @param breed
+     * @param colour
+     */ 
+    public Dog(String name, int age, String breed, String colour){
         //pass through the variables 
-         super(name,age,breed,colour);
-         
+         super(name,age,breed,colour);        
      }
     @Override
     public void speak(){
@@ -23,12 +27,12 @@ public class Dog extends Pet{
     public void howl(){
         System.out.println("HOOOOOOWWWWWLLLLLL...");
 }
+    
      @Override
     public String toString(){
         //enables us to add more information but keep information
          String fromPet = super.toString();
          fromPet += "\nType: Dog";
-         return fromPet;
-        
+         return fromPet;       
     }
 }
